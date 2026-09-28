@@ -1,6 +1,6 @@
 # Personal website
 
-A one-page academic site for GitHub Pages. Plain HTML, CSS, and about sixty lines of JavaScript. There is no build step: open `index.html` in a browser and it works.
+A one-page academic site, live at https://aymanhabib13.github.io. Plain HTML, CSS, and about sixty lines of JavaScript. There is no build step: open `index.html` in a browser and it works.
 
 ## What's in here
 
@@ -34,23 +34,17 @@ The CV link then appears between your email and Google Scholar. If the site is a
 - **Beyond research.** Trails are a plain list of `<li>`s. Add a sentence about other hobbies if you like.
 - **Photos.** To swap one, drop in a new square JPG at the same path. Both images should be the same size so the flip lines up.
 
-## Publish on GitHub Pages
+## Updating the live site
 
-1. Create a new **public** repository on GitHub named exactly `USERNAME.github.io`, where `USERNAME` is your GitHub username.
-2. Push this folder to it:
+The page is served from the `main` branch of https://github.com/aymanhabib13/aymanhabib13.github.io. To publish a change, from this folder:
 
-   ```
-   cd personal-website
-   git init
-   git add .
-   git commit -m "Initial site"
-   git branch -M main
-   git remote add origin https://github.com/USERNAME/USERNAME.github.io.git
-   git push -u origin main
-   ```
+```
+git add -A
+git commit -m "Describe the change"
+git push
+```
 
-3. On GitHub, open **Settings → Pages**. Under *Build and deployment*, set Source to **Deploy from a branch**, choose `main` and `/ (root)`, and save.
-4. Within a couple of minutes the site is live at `https://USERNAME.github.io`. Every later push updates it.
+GitHub rebuilds the site within a minute or so. Hard-refresh the browser if an old version lingers.
 
 ## Preview locally
 
