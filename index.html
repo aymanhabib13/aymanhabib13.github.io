@@ -6,8 +6,8 @@
   <title>Mohammed Ayman Habib</title>
   <meta name="description" content="Mohammed Ayman Habib is a PhD student in Electrical and Computer Engineering at the University of Utah, working on analog electronic design automation.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f6f7f4" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#141916" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
 
   <!-- Link previews in Slack, iMessage, X, etc. -->
   <meta property="og:type" content="profile">
@@ -17,35 +17,9 @@
   <meta property="og:image" content="https://aymanhabib13.github.io/assets/img/headshot.jpg">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap">
   <link rel="stylesheet" href="assets/style.css">
-
-  <!-- Applies a saved light/dark choice before first paint so the page never flashes. -->
-  <script>
-    try {
-      var savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'light' || savedTheme === 'dark') document.documentElement.dataset.theme = savedTheme;
-    } catch (e) {}
-  </script>
 </head>
 <body>
-<a class="skip" href="#about">Skip to content</a>
-
-<header class="site-header">
-  <nav class="site-nav" aria-label="Sections">
-    <a href="#about">About</a>
-    <a href="#news">News</a>
-    <a href="#publications">Publications</a>
-    <a href="#beyond">Beyond research</a>
-  </nav>
-  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme" title="Switch theme">
-    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-  </button>
-</header>
-
 <main>
   <!-- ====================================================================
        ABOUT
@@ -68,8 +42,8 @@
     <div class="intro-text">
       <div class="intro-head">
         <h1>Mohammed Ayman Habib</h1>
-        <!-- Pronouns are welcome here, e.g. "PhD student · ECE, University of Utah · they/them" -->
-        <p class="role">PhD student · Electrical and Computer Engineering, University of Utah</p>
+        <!-- Pronouns are welcome here, e.g. "PhD student, ECE, University of Utah (they/them)" -->
+        <p class="role">PhD student, Electrical and Computer Engineering, University of Utah</p>
       </div>
       <p>I'm a PhD student in the <a href="https://www.ece.utah.edu/">Electrical and Computer Engineering</a> department at the <a href="https://www.utah.edu/">University of Utah</a>, advised by <a href="https://scholar.google.com/citations?user=YnNm3QoAAAAJ&amp;hl=en">Dr. Morteza Fayazi</a>. I work on analog electronic design automation, a field that intersects computer engineering and artificial intelligence. Lately I've been focused on using large language models for analog circuit sizing and reinforcement learning for antenna pattern synthesis.</p>
       <p>Before Utah, I did my undergraduate degree in Electrical and Electronics Engineering at <a href="https://www.msrit.edu/">Ramaiah Institute of Technology</a>, Bangalore.</p>
@@ -105,7 +79,7 @@
   <!-- ====================================================================
        PUBLICATIONS  (newest first; copy a <li class="pub"> to add one)
        Bold your own name with <b class="me">. Add <sup>*</sup> for equal
-       contribution and a <span class="badge"> for orals, spotlights, awards.
+       contribution, and put things like (Oral) or (Spotlight) after the venue.
        ==================================================================== -->
   <section id="publications" class="section">
     <h2>Publications</h2>
@@ -136,28 +110,15 @@
 
   <!-- ====================================================================
        BEYOND RESEARCH
-       This is where the personality lives. Add or remove trails as <li>s.
        ==================================================================== -->
   <section id="beyond" class="section">
     <h2>Beyond research</h2>
-    <p>Most weekends I'm on a trail somewhere in Utah.</p>
-    <div class="trail-list">
-      <span class="trail-label">Trails worth repeating</span>
-      <ul aria-label="Favorite trails">
-        <li>Mount Timpanogos</li>
-        <li>Angels Landing</li>
-        <li>Red Pine Lake</li>
-        <li>Lake Blanche</li>
-      </ul>
-    </div>
+    <p>Most weekends I'm on a trail somewhere in Utah. The ones I keep going back to: Mount Timpanogos, Angels Landing, Red Pine Lake, and Lake Blanche.</p>
   </section>
 </main>
 
 <footer class="site-footer">
-  <svg class="ridge" viewBox="0 0 720 60" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 60 L60 34 L110 46 L180 18 L240 40 L300 24 L360 44 L420 12 L480 38 L540 28 L600 46 L660 30 L720 44 L720 60 Z"/>
-  </svg>
-  <p>Last updated <time datetime="2026-09">September 2026</time>. Plain HTML and CSS, no framework. <a href="https://github.com/aymanhabib13/aymanhabib13.github.io">Source</a>.</p>
+  <p>Last updated <time datetime="2026-09">September 2026</time>. <a href="https://github.com/aymanhabib13/aymanhabib13.github.io">Source</a>.</p>
 </footer>
 
 <script src="assets/main.js" defer></script>

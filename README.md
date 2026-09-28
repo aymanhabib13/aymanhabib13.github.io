@@ -1,14 +1,14 @@
 # Personal website
 
-A one-page academic site, live at https://aymanhabib13.github.io. Plain HTML, CSS, and about sixty lines of JavaScript. There is no build step: open `index.html` in a browser and it works.
+A one-page academic site, live at https://aymanhabib13.github.io. Plain HTML, CSS, and a few lines of JavaScript. There is no build step and nothing is downloaded from anywhere else: open `index.html` in a browser and it works.
 
 ## What's in here
 
 | File | Purpose |
 | --- | --- |
 | `index.html` | All the content. The only file you'll edit regularly. |
-| `assets/style.css` | Colors, fonts, spacing. The tokens at the top control the whole look. |
-| `assets/main.js` | Light/dark toggle, the photo flip on tap, and the email link. |
+| `assets/style.css` | Colors, font, spacing. The tokens at the top control the whole look. |
+| `assets/main.js` | The photo flip on tap, and the email link. |
 | `assets/img/headshot.jpg`, `assets/img/hiking.jpg` | Your two photos, 800×800, metadata stripped. |
 | `favicon.svg` | The little mountain in the browser tab. |
 | `.nojekyll` | Tells GitHub Pages to serve the files exactly as they are. |
@@ -19,7 +19,7 @@ A one-page academic site, live at https://aymanhabib13.github.io. Plain HTML, CS
 2. Put it in the `assets/` folder, next to `style.css`.
 3. In `index.html`, find the line `<!-- CV: save it as assets/cv.pdf` inside the links block. Delete that comment line and the `-->` line below it, leaving `<li><a href="assets/cv.pdf">CV</a></li>` in place.
 
-The CV link then appears between your email and Google Scholar. If the site is already live, push the change and it updates.
+The CV link then appears between your email and Google Scholar. Push the change and the site updates.
 
 ## Still optional
 
@@ -29,9 +29,9 @@ The CV link then appears between your email and Google Scholar. If the site is a
 ## Keeping it current
 
 - **News.** Copy an `<li>` in the News list. Newest first.
-- **Publications.** Copy the `<li class="pub">` block. Bold your own name with `<b class="me">`, mark equal contribution with `<sup>*</sup>`, and use `<span class="badge">` for orals, spotlights, and awards. There is a commented-out `code` link in the AaLLM entry for when the repo is public.
+- **Publications.** Copy the `<li class="pub">` block. Bold your own name with `<b class="me">`, mark equal contribution with `<sup>*</sup>`, and write things like (Oral) or (Spotlight) after the venue. There is a commented-out `code` link in the AaLLM entry for when the repo is public.
 - **Teaching & service.** The section is in `index.html` inside a comment. Remove the comment markers and fill in the items when you have a course or reviewing to list.
-- **Beyond research.** Trails are a plain list of `<li>`s. Add a sentence about other hobbies if you like.
+- **Beyond research.** One paragraph. Edit the sentence.
 - **Photos.** To swap one, drop in a new square JPG at the same path. Both images should be the same size so the flip lines up.
 
 ## Updating the live site
@@ -58,18 +58,8 @@ and open http://localhost:8000.
 
 ## Adjusting the look
 
-- **Colors.** Edit the tokens at the top of `assets/style.css`. `--accent` is the one you see everywhere. The dark palette appears twice on purpose (system-dark and toggled-dark); keep both blocks identical.
-- **Fonts.** Change the Google Fonts `<link>` in `index.html` and the `--font-*` tokens.
+- **Colors.** Edit the tokens at the top of `assets/style.css`. `--link` is the only color that isn't a gray. The dark palette appears twice on purpose (system-dark and an explicit override); keep both blocks identical.
+- **Font.** The `--font` token is a system font stack, so the page uses whatever the reader's device uses. Swap in a specific typeface there if you ever want one.
 - **Width.** `--measure` sets the column width.
+- **Dark mode.** Follows the operating system automatically. Delete the two dark blocks in `style.css` to make the page always white.
 - **Turn off the flip.** Delete the second `<img>` and the `<figcaption>`; the photo becomes a plain image.
-- **Turn off the theme toggle.** Delete `<button class="theme-toggle">`. The site still follows the OS setting.
-
-## Ideas on the shelf
-
-Things that would fit this design if you want more personality later:
-
-- A "currently" line under the bio: what you're reading, listening to, or the last trail you did.
-- Plain-English tooltips on the jargon in your bio, so people outside your field can hover and get the gist.
-- A tiny hiker that climbs the footer ridge as the reader scrolls down the page.
-- Links from each trail name to a photo from that hike.
-- A photo that changes with the season or the time of day.
