@@ -58,8 +58,7 @@ and open http://localhost:8000.
 
 ## Adjusting the look
 
-- **Colors.** Edit the tokens at the top of `assets/style.css`. `--link` is the only color that isn't a gray. The dark palette appears twice on purpose (system-dark and an explicit override); keep both blocks identical.
+- **Colors.** Edit the tokens at the top of `assets/style.css`. `--link` is the only color that isn't a gray. The page is always white; there is no dark mode.
 - **Font.** The `--font` token is a system font stack, so the page uses whatever the reader's device uses. Swap in a specific typeface there if you ever want one.
 - **Width.** `--measure` sets the column width.
-- **Dark mode.** Follows the operating system automatically. Delete the two dark blocks in `style.css` to make the page always white.
 - **Turn off the flip.** Delete the second `<img>` and the `<figcaption>`; the photo becomes a plain image.

@@ -16,27 +16,6 @@
   --portrait: 13rem;
 }
 
-/* Dark mode follows the operating system. There is no toggle.
-   The palette appears twice on purpose; keep the two blocks identical. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --bg: #111111;
-    --text: #e6e6e6;
-    --muted: #9a9a9a;
-    --rule: #333333;
-    --link: #8ab4f8;
-  }
-}
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #111111;
-  --text: #e6e6e6;
-  --muted: #9a9a9a;
-  --rule: #333333;
-  --link: #8ab4f8;
-}
-
 /* --------------------------------------------------------------------------
    Base
    -------------------------------------------------------------------------- */
