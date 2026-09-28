@@ -24,7 +24,6 @@ The CV link then appears between your email and Google Scholar. If the site is a
 ## Still optional
 
 - **GitHub and X.** Both links are inside a comment in the links block. Fill in the URLs and remove the comment markers, or delete the lines.
-- **`USERNAME`.** Appears in the `og:` tags in `<head>` and in the footer's source link. Replace it once the repo exists.
 - **Footer date.** Update "last updated" when you make changes.
 
 ## Keeping it current
